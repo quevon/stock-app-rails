@@ -8,4 +8,11 @@ class User < ApplicationRecord
          :validatable,
          :confirmable,
          :trackable
+
+  # enum role: [:user, :admin]
+  # after_initialize :set_defaut_role, :if => :new_record?
+  #
+  # def set_defaullt_role
+  #   self.role ||= :user
+  # end
 end
