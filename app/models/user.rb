@@ -6,8 +6,7 @@ class User < ApplicationRecord
          :recoverable,
          :rememberable,
          :validatable,
-         :confirmable,
-         :trackable
+         :confirmable
 
   # enum role: [:user, :admin]
   # after_initialize :set_defaut_role, :if => :new_record?
